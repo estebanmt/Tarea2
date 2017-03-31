@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get 'usuario', to: 'users#index'
   get 'usuario/:id', to: 'users#show'
   delete 'usuario/:id', to: 'users#destroy'
-  post 'usuario', to: 'users#create'
+  put 'usuario', to: 'users#create'
 end
