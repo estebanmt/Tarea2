@@ -1,4 +1,4 @@
-class Usuario < ApplicationRecord
+class User < ApplicationRecord
   validates_presence_of :usuario, :nombre
 
   def as_json(options={})

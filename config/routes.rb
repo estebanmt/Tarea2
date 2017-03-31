@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  resources :usuarios
+  resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get 'usuario', to: 'usuarios#index'
-  get 'usuario/:id', to: 'usuarios#show'
-  delete 'usuario/:id', to: 'usuarios#destroy'
+  get 'usuario', to: 'users#index'
+  get 'usuario/:id', to: 'users#show'
+  delete 'usuario/:id', to: 'users#destroy'
+  post 'usuario', to: 'users#create'
 end
