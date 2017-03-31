@@ -5,9 +5,8 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    render json: @users
+    render :json => {:usuarios => @users, :total => @users.size }
   end
-
   # GET /users/1
   def show
     render json: @user
